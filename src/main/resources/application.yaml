@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: test
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/test?useSSL=false&allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: vivi
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    database: mysql
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+
+  liquibase:
+    change-log: classpath:db/changelog/changelog-master.yml
