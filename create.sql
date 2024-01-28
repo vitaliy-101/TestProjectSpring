@@ -1,0 +1,3 @@
+CREATE USER 'vivi'@'%' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON * . * TO 'vivi'@'%';
+CREATE DATABASE test;
