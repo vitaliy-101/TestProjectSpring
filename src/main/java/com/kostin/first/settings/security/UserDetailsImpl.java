@@ -7,20 +7,17 @@ import java.util.Collections;
 import java.util.Objects;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-<<<<<<< HEAD
+
 import lombok.NoArgsConstructor;
-=======
->>>>>>> ac823d32a045b570eee0782fa5ee75bb561a6805
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 @Data
 @AllArgsConstructor
-<<<<<<< HEAD
+
 @NoArgsConstructor
-=======
->>>>>>> ac823d32a045b570eee0782fa5ee75bb561a6805
+
 public class UserDetailsImpl implements UserDetails {
     private static final long serialVersionUID = 1L;
     private Long id;
@@ -31,16 +28,11 @@ public class UserDetailsImpl implements UserDetails {
     private GrantedAuthority authority;
 
     public static UserDetailsImpl build(User user) {
-<<<<<<< HEAD
         //TODO
         GrantedAuthority authorities = new SimpleGrantedAuthority(user.getRole().getAuthority());
         return new UserDetailsImpl(
             user.getId().longValue(),
-=======
-        GrantedAuthority authorities = new SimpleGrantedAuthority(user.getRole().getAuthority());
-        return new UserDetailsImpl(
-            user.getId(),
->>>>>>> ac823d32a045b570eee0782fa5ee75bb561a6805
+
             user.getUsername(),
             user.getEmail(),
             user.getPassword(),

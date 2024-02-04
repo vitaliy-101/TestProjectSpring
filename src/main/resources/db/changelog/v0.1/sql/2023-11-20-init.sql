@@ -3,7 +3,6 @@
 create table if not exists `user`
 (
   id INT AUTO_INCREMENT,
-<<<<<<< HEAD
   username VARCHAR(100) NOT NULL,
     password VARCHAR(100) NOT NULL,
   age INT,
