@@ -1,5 +1,6 @@
 package com.kostin.first.settings.security;
 
+<<<<<<< HEAD
 import io.jsonwebtoken.*;
 
 import java.util.Date;
@@ -8,6 +9,14 @@ import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
+=======
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
+import java.util.Date;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.tomcat.util.net.openssl.ciphers.Authentication;
+import org.springframework.beans.factory.annotation.Value;
+>>>>>>> ac823d32a045b570eee0782fa5ee75bb561a6805
 import org.springframework.stereotype.Component;
 
 @Component

@@ -14,7 +14,9 @@ public interface PhoneRepository extends JpaRepository<Phone,Integer> {
     List<Phone> getAllPhonesSort();
     @Query("SELECT phone From Phone phone LEFT JOIN FETCH phone.user u")
     List<Phone> getPhonesWithUsers();
+
     @Query("SELECT NEW com.kostin.first.entities.view.PhoneView (phone.id, phone.model, phone.year, u.username, u.id) From Phone phone LEFT JOIN phone.user u")
+
     List<PhoneView> getPhoneViews();
     boolean existsByModel(String model);
 

@@ -1,6 +1,7 @@
 package com.kostin.first.entities;
 
 import com.kostin.first.settings.security.UserRole;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

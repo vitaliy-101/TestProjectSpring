@@ -35,6 +35,7 @@ public class UserServiceImpl implements UserService, UserReadService{
     }
     @Override
     public User createUser(User user){
+
         if (userRepository.existsByUsername(user.getUsername())){
             throw new FoundException(User.class, user.getUsername());
         }
@@ -53,6 +54,7 @@ public class UserServiceImpl implements UserService, UserReadService{
         lastUser.setText(user.getText());
         lastUser.setAge(user.getAge());
         lastUser.setUsername(user.getUsername());
+
         return userRepository.save(lastUser);
     }
 

@@ -3,6 +3,7 @@
 create table if not exists `user`
 (
   id INT AUTO_INCREMENT,
+<<<<<<< HEAD
   username VARCHAR(100) NOT NULL,
     password VARCHAR(100) NOT NULL,
   age INT,
@@ -11,6 +12,7 @@ create table if not exists `user`
   text VARCHAR(300),
   CONSTRAINT pk_user primary key (id),
   CONSTRAINT uq_user_name unique (username)
+
 );
 create table if not exists phone
 (

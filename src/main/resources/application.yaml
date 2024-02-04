@@ -15,8 +15,11 @@ spring:
 
   liquibase:
     change-log: classpath:db/changelog/changelog-master.yml
+<<<<<<< HEAD
 mt:
   app:
     jwtSecret: as
     jwtExpirationMs: 86400000
 
+=======
+>>>>>>> ac823d32a045b570eee0782fa5ee75bb561a6805
